@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Homework</title>
+</head>
+<style>
+     body{
+        background-color: rgb(47, 146, 2);
+    }
+
+    .container {
+        width: 400px;
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    .Tablecontainer {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+    }
+    </style>
+
+<script>
+    function previous() {        
+        window.location.href = "aFirstTable.html";
+    }
+
+    function next() {
+        window.location.href = "aThirdTable.html";
+    }
+</script>
+</style>
+<body>
+    <div class="container">
+        <h1>🔥Html Homework🔥</h1>
+    </div>
+    <div class="Tablecontainer">
+        <table style="width: 100%;">
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Parts</th>
+            </tr>
+            <tr>
+                <td rowspan="5">SHIVA</td>
+                <td rowspan="2">Math</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Science</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td rowspan="4">RAM</td>
+                <td rowspan="2">Maths</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Science</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>B</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <h2>👆Total 10 rows, 3 columns👆</h2>
+        <h4>Pages(2:6)</h4>
+        <button onclick="previous()">&#x2B05 Previous page</button>
+        <button onclick="next()">Next page &#10145</button>
+    </div>
+</body>
+</html>

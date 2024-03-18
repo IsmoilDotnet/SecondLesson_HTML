@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Homework</title>
+</head>
+
+<style>
+     body{
+        background-color: rgb(255, 255, 0);
+    }
+
+    .container {
+        width: 400px;
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    .Tablecontainer {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+    }
+    </style>
+
+<script>
+    function previous() {        
+        window.location.href = "aSecondTable.html";
+    }
+
+    function next() {
+        window.location.href = "bFourthTable.html";
+    }
+</script>
+</style>
+
+<body>
+    <div class="container">
+        <h1>🔥Html Homework🔥</h1>
+    </div>
+
+    <div class="Tablecontainer">
+        <table style="width: 100%;">
+            <tr>
+                <td rowspan="2">Logo</td>
+                <td rowspan="2" colspan="3">Top Menu</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td rowspan="10">Side Menu</td>
+                <td rowspan="5">... <br> ... <br> World News <br> ... <br> ...</td>
+                <td rowspan="5">Financial</td>
+                <td rowspan="10">List of Ads</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td rowspan="5">... <br> ... <br>Technology <br> ... <br> ... </td>
+                <td rowspan="5">Sports</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td rowspan="2" colspan="4">Footer</td>
+            </tr>
+            <tr></tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>👆Total 14 rows, 4 columns👆</h2>
+        <h4>Pages(3:6)</h4>
+        <button onclick="previous()">&#x2B05 Previous page</button>
+        <button onclick="next()">Next page &#10145</button>
+    </div>
+</body>
+</html>

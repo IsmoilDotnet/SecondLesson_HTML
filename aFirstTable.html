@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Homework</title>
+</head>
+    <style>
+     body{
+        background-color: rgb(228, 228, 189);
+    }
+
+    .container {
+        width: 400px;
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    .Tablecontainer {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+    }
+    </style>
+
+<script>
+    function next() {
+        window.location.href = "aSecondTable.html";
+    }
+</script>
+
+<body>
+    <div class="container">
+        <h1>🔥Html Homework🔥</h1>
+    </div>
+
+    <div class="Tablecontainer">
+        <table style="width: 100%;">
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td colspan="2">ColumnSpan="2"</td>
+                <td colspan="2">ColumnSpan="2"</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td rowspan="3" colspan="2">RowSpan="3"<br>ColumnSpan="2"</td>
+                <td rowspan="5" colspan="2">RowSpan="5"<br>ColumnSpan="2"</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td rowspan="5">RowSpan="5"</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td colspan="2">ColumnSpan="2"</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td colspan="2">ColumnSpan="2"</td>
+
+            </tr>
+            <tr>
+                <td>7</td>
+                <td></td>
+                <td colspan="2">ColumnSpan="2"</td>
+                <td colspan="1">null</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td></td>
+                <td colspan="2">ColumnSpan="2"</td>
+                <td colspan="1">null</td>
+            </tr>
+    </div>
+
+    </table>
+    
+
+    <div class="container">
+        <h2>👆Total 8 rows, 6 columns👆</h2>
+        <h4>Pages(1:6)</h4>
+        <button onclick="next()">Next page &#10145</button>
+    </div>
+    
+</body>
+</html>

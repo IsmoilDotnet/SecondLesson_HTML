@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Homework</title>
+</head>
+
+<style>
+     body{
+        background-color: rgb(0, 255, 234);
+    }
+
+    .container {
+        width: 400px;
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    .Tablecontainer {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    table, th, td {
+  border:1px solid black;
+    }
+    </style>
+
+<script>
+    function previous() {        
+        window.location.href = "aThirdTable.html";
+    }
+
+    function next() {
+        window.location.href = "cFifthTable.html";
+    }
+</script>
+</style>
+
+<body>
+    <div class="container">
+        <h1>🔥Html Homework🔥</h1>
+    </div>
+
+    <div class="Tablecontainer">
+        <table style="width: 100%;">
+            <tr>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+            </tr>
+            <tr>
+                <td rowspan="4">You can span <br> Down</td>
+                <td colspan="3">You can span accross</td>
+            </tr>
+            <tr>
+                <td colspan="2">It's Like a puzzle</td>
+                <td rowspan="3">Over <br> here.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">This <br> way.</td>
+                <td>That way</td>
+            </tr>
+            <tr>
+                <td>Where am <br> I?</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>👆Total 5 rows, 4 columns👆</h2>
+        <h4>Pages(4:6)</h4>
+        <button onclick="previous()">&#x2B05 Previous page</button>
+        <button onclick="next()">Next page &#10145</button>
+    </div>    
+</body>
+</html>
